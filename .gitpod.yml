@@ -1,0 +1,11 @@
+image: gitpod/workspace-node-lts
+ports:
+  - port: 3030
+    onOpen: open-browser
+tasks:
+  - init: npm install
+    command: npm run dev
+vscode:
+  extensions:
+    - antfu.slidev
+    - esbenp.prettier-vscode
